@@ -1,0 +1,25 @@
+﻿http://www.mobilemotion.eu/?p=1537
+
+I’m currenlty working on extending a legacy project with multiple new modules. The original project was started as a WinForms application and contains hundreds of existing forms which we decided to not change due to lack of resources. In contrast, to ensure that at least the newly created modules are state of the art, I’d really like to create those using WPF. However, when trying to add a new WPF window to the project in Visual Studio it turns out this is not possible – I’m only provided with the option to create a WPF user control:
+
+After playing around a bit, I found out there are two ways of making WinForms projects work with WPF windows:
+The first option is to actually add a WPF User Control using Visual Studio’s Add New Item wizard, and afterwords convert it to a window. This can be done by 
+replacing the <UserControl ...> tag with <Window ...>, and (if desired) add a Title attribute (don’t forget to change the closing tag also) – the namespaces need not ne adapted -, and
+even in code behind, make the class inherit from Window instead of UserControl.
+This approach is the easiest option if applied to only one or a few windows.
+Since this is a cumbersome and error-prone way if applied to larger projects that require multiple windows to be created, there exists an alternative approach: 
+Open the project’s manifest file (the one with the .csproj extension) in any text editor.
+The top node <Project> usually contains several <PropertyGroup> tags, one for each build configuration and a global one. In the global <PropertyGroup> node (the one without Condition attribute), search for the <ProjectTypeGuids> sub-node or create one if it does not exist. This node should contain two GUIDs: FAE04EC0-301F-11D3-BF4B-00C04F79EFBC, which stands for a C# project, and 60dc8134-eba5-43b8-bcc9-bb4bc16c2548 which stands for WPF. The full line should look as follows: 
+1
+<ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+(If you’re interested in details, codeproject holds a complete list of potential project GUIDs: http://www.codeproject.com/Reference/720512/List-of-Visual-Studio-Project-Type-GUIDs)
+Reload the project in Visual Studio, and open the Add New Item wizard.
+Since the project is now officially classified as WOF project, this wizard should now contain the WPF window option. By the way, since there is no WinForms project GUID that could be overwritten, this approach does not harm the existing project components.
+Independent of which approach you take, before being able to reference WPF windows in code, you’ll need to add a reference to System.Xaml to the project:
+
+Now, you can instantiate and open WPF windows from C# code, e.g. from within a WinForms form:
+1
+new MyWpfWindow().Show();
+By the way, it is also possible to open modal WPF windows on top of a parent WinForm:
+1
+new MyWpfWindow().ShowDialog();

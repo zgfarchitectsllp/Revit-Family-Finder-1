@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1C6069E-8EB8-407C-B84D-DC82E5C7E4B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZGF.Revit</RootNamespace>
+    <AssemblyName>ContentManager</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <OutputPath>..\..\..\..\..\..\ProgramData\Autodesk\Revit\Addins\2022\ZGF\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InfragisticsWPF4.Controls.Grids.XamGrid.v21.2, Version=21.2.20212.9, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>bin\Release\InfragisticsWPF4.Controls.Grids.XamGrid.v21.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.DataPresenter.v21.2, Version=21.2.20212.9, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Infragistics\2021.2\WPF\CLR4.0\Bin\InfragisticsWPF4.DataPresenter.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Editors.v21.2, Version=21.2.20212.9, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>bin\Release\InfragisticsWPF4.Editors.v21.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.v21.2, Version=21.2.20212.9, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>bin\Release\InfragisticsWPF4.v21.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RevitAPI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FamilyFinder\ContentTypeSelector.xaml.cs">
+      <DependentUpon>ContentTypeSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyBatchProcessor\FamilyHelper.cs" />
+    <Compile Include="ViewFinder\DuplicateViewUtils.cs" />
+    <Compile Include="FamilyFinder\exContent_Helpers.cs" />
+    <Compile Include="FamilyFinder\exContent_LoadableFamily.cs" />
+    <Compile Include="FamilyFinder\exContent_SystemTypes.cs" />
+    <Compile Include="FamilyFinder\exContent_Views.cs" />
+    <Compile Include="FamilyFinder\FamilyExternalContent.cs" />
+    <Compile Include="ViewFinder\GetThumbnailFromFile.cs" />
+    <Compile Include="OptionViewCollector.cs" />
+    <Compile Include="OptionViewManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionViewManager.Designer.cs">
+      <DependentUpon>OptionViewManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyFinder\FamilyBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamilyFinder\FamilyBrowser.Designer.cs">
+      <DependentUpon>FamilyBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSystemHelper.cs" />
+    <Compile Include="Common\Press.cs" />
+    <Compile Include="RenumberViewsOnSheet.cs" />
+    <Compile Include="ScaleToString.cs" />
+    <Compile Include="SearchHistory.cs" />
+    <Compile Include="Common\ServerConnectionTester.cs" />
+    <Compile Include="ViewFinder\SheetViewManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFinder\SheetViewManager.Designer.cs">
+      <DependentUpon>SheetViewManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SortableBindingList.cs" />
+    <Compile Include="ViewFinder\ViewFinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFinder\ViewFinder.Designer.cs">
+      <DependentUpon>ViewFinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyBatchProcessor\ImportFamilies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamilyBatchProcessor\ImportFamilies.Designer.cs">
+      <DependentUpon>ImportFamilies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyBatchProcessor\ExportFamilies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FamilyBatchProcessor\ExportFamilies.Designer.cs">
+      <DependentUpon>ExportFamilies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RevitFileUtilities.cs" />
+    <Compile Include="Common\Settings.cs" />
+    <Compile Include="Common\Utilities.cs" />
+    <Compile Include="ViewFinder\ViewCollector.cs" />
+    <Compile Include="ViewFinder\ViewMaker_Rooms.cs" />
+    <Compile Include="ViewFinder\ViewMaker_ScopeBoxes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BatchFamiliesToMedicalCategory.addin">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\Categories_Select_None.png" />
+    <None Include="Resources\Categories_Select_Inverse.png" />
+    <None Include="Resources\Categories_Select_All.png" />
+    <None Include="Resources\No_preview_200x200.png" />
+    <None Include="Art\ZGF_Logo_Red2.png" />
+    <None Include="Art\Clear Search.png" />
+    <None Include="Art\ZGF_Logo_sm.jpg" />
+    <None Include="Art\ZGF_Logo_sm.gif" />
+    <None Include="Art\ZGF_Logo_sm.png" />
+    <None Include="Art\ContentBoth.png" />
+    <None Include="Art\ContentExternal.png" />
+    <None Include="Art\ContentInternal.png" />
+    <None Include="Art\ZGF_Logo_Red.png" />
+    <None Include="Art\ZGF_Logo_ViewBrowser.png" />
+    <None Include="Art\EditFamily.png" />
+    <None Include="Art\EditFamily1.png" />
+    <Content Include="AddingXamlFormToExistProject.txt" />
+    <Content Include="ContentManager_DEBUG.addin">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OptionViewManager.resx">
+      <DependentUpon>OptionViewManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyFinder\FamilyBrowser.resx">
+      <DependentUpon>FamilyBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ViewFinder\SheetViewManager.resx">
+      <DependentUpon>SheetViewManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFinder\ViewFinder.resx">
+      <DependentUpon>ViewFinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyBatchProcessor\ImportFamilies.resx">
+      <DependentUpon>ImportFamilies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyBatchProcessor\ExportFamilies.resx">
+      <DependentUpon>ExportFamilies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="FamilyFinder\ContentTypeSelector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM IF "$(ConfigurationName)"=="Debug" COPY "$(ProjectDir)$(TargetName).addin" "C:\ProgramData\Autodesk\Revit\Addins\2020\$(TargetName).addin" /Y
+REM IF "$(ConfigurationName)"=="Debug" DEL "C:\ProgramData\Autodesk\Revit\Addins\2020\$(TargetFileName)"
+
+REM COPY "$(TargetPath)" "C:\ProgramData\Autodesk\Revit\Addins\2022\ZGF\$(TargetFileName)" /Y
+
+C:\Users\trevor.taylor\Dropbox\DEV\signtool.exe sign /i ZGF-SubCA-1 "$(TargetPath)"
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

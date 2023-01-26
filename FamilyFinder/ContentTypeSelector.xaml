@@ -1,0 +1,128 @@
+﻿<Window x:Class="ZGF.Revit.ContentTypeSelector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZGF.Revit"
+        xmlns:igDP="http://infragistics.com/DataPresenter"
+        xmlns:ig="http://schemas/infragistics.com/xaml"
+        
+    mc:Ignorable="d"
+        Name='formSpecifyTypes'
+        
+        Height="450"
+        Width="573"
+        MinWidth='600'
+        MinHeight='300'
+        ShowInTaskbar='False'
+        WindowStyle='ToolWindow'
+        WindowStartupLocation='CenterOwner'
+        Margin='0'
+        BorderBrush='Black'
+        Background='#FFB4B4B4'>
+    <Grid x:Name="gridMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <!--<RowDefinition Height="28" />-->
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+           
+        </Grid.RowDefinitions>
+
+        <!--<Label x:Name='labelTopLabel'
+           Content='Family Types'
+           Height='26'
+           VerticalAlignment='Top'
+           HorizontalAlignment='Left'
+           Margin='10,1,0,0'  
+           Grid.Row="0" />-->
+
+        <Label x:Name='labelBottomLabel'
+           Content='Select one or more types from the list'
+           Height='30'
+           VerticalAlignment='Bottom'
+           HorizontalAlignment='Left'
+           Margin='10,0,0,10' 
+           Grid.Row="2" />
+        
+        <Button x:Name='buttonOK'
+            Content='OK'
+            VerticalAlignment='Bottom'
+            Width='100'
+            Height='22'
+            HorizontalAlignment='Right'
+            IsDefault='True'
+            Margin='0,0,126,12'
+            RenderTransformOrigin='-0.176,-0.243'
+            Click='buttonOK_Click' 
+            Grid.Row="2" Grid.Column ="1"
+            Grid.ColumnSpan="2"/>
+        
+        <Button x:Name='buttonCancel'
+            Content='Cancel'
+            VerticalAlignment='Bottom'
+            Height='22'
+            Width='100'
+            HorizontalAlignment='Right'
+            IsCancel='True'
+            Margin='0,0,16,12'
+            Click='buttonCancel_Click' 
+            Grid.Row="2" Grid.Column="1"
+            Grid.ColumnSpan="2"/>
+
+        <!--<DataGrid x:Name='datagridFilters'
+            Margin='10,10,10,0'              
+            IsReadOnly='True'
+            HorizontalGridLinesBrush='#FFC9C9C9'
+            VerticalGridLinesBrush='#FF636363'
+            HeadersVisibility="All" 
+            Grid.Row="0"
+            ColumnWidth='*' Grid.ColumnSpan="2"
+            AutoGenerateColumns="True"/>-->
+
+        <igDP:XamDataGrid Name="datagridInfra"
+                          SelectedDataItemsScope="RecordsOnly"                          
+                          Margin="10,10,10,0"
+                          Grid.Row="0"
+                          Grid.ColumnSpan="2" 
+                          GroupByAreaLocation="None">
+            <igDP:XamDataGrid.FieldSettings>
+                <igDP:FieldSettings 
+                    AllowRecordFiltering="True"
+                    AllowGroupBy="false"
+                    AllowEdit="false" 
+                    CellClickAction="SelectRecord"/>
+            </igDP:XamDataGrid.FieldSettings>
+            <igDP:XamDataGrid.FieldLayoutSettings>
+                <igDP:FieldLayoutSettings 
+                    AllowDelete="False" 
+                    AllowFieldMoving="No" 
+                    AllowRecordFixing="No">
+                    <igDP:FieldLayoutSettings.RecordSelectorStyle>
+                        <Style />
+                    </igDP:FieldLayoutSettings.RecordSelectorStyle>
+                </igDP:FieldLayoutSettings>
+            </igDP:XamDataGrid.FieldLayoutSettings>
+        </igDP:XamDataGrid>
+
+        <!--<DataGrid x:Name='datagridTypes'
+            Margin='10,10,10,0'              
+            IsReadOnly='True'
+            HorizontalGridLinesBrush='#FFC9C9C9'
+            VerticalGridLinesBrush='#FF636363'
+            HeadersVisibility="Column"
+            Grid.Row="0"
+            
+            Grid.ColumnSpan="2" 
+                  SelectedIndex="0"
+                  FrozenColumnCount="1"
+                  CanUserReorderColumns="False"
+                  HorizontalScrollBarVisibility="Auto"/>-->
+        
+
+    </Grid>
+</Window>

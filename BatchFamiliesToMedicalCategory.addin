@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+ 
+
+
+
+	<AddIn Type="Command">
+		<Assembly>ContentManager.dll</Assembly>
+		<AddInId>D5973F88-034C-483D-96BE-BB25F02DA299</AddInId>
+		<FullClassName>ZGF.Revit.BatchFamilyUpdater</FullClassName>
+		<Text>Batch to Medical Equipment Category</Text>
+		<VendorId>ZGFA</VendorId>
+		<VendorDescription>ZGF Architects LLP</VendorDescription>
+		<Description>Opens families and changes to medical equipment category.</Description>
+		
+		<LanguageType>Unknown</LanguageType>
+	</AddIn>
+
+
+</RevitAddIns>
+
