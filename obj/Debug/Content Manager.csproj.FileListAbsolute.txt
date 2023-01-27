@@ -1,0 +1,55 @@
+C:\ProgramData\Autodesk\Revit\Addins\2022\ZGF\ContentManager.dll.config
+C:\ProgramData\Autodesk\Revit\Addins\2022\ZGF\ContentManager.dll
+C:\ProgramData\Autodesk\Revit\Addins\2022\ZGF\ContentManager.pdb
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\Content Manager.csproj.AssemblyReference.cache
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\FamilyFinder\ContentTypeSelector.g.cs
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ContentManager_MarkupCompile.cache
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ContentManager_MarkupCompile.lref
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\FamilyFinder\ContentTypeSelector.baml
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ContentManager.g.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ZGF.Revit.OptionViewManager.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ZGF.Revit.FamilyBrowser.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ZGF.Revit.SheetViewManager.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ZGF.Revit.ViewFinder.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ZGF.Revit.FamilyImport.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ZGF.Revit.FamilyExport.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ZGF.Revit.Properties.Resources.resources
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\Content Manager.csproj.GenerateResource.cache
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ContentManager.dll.licenses
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\Content Manager.csproj.CoreCompileInputs.cache
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\Content Manager.csproj.CopyComplete
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ContentManager.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\obj\Debug\ContentManager.pdb
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\ContentManager.dll.config
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\ContentManager.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\ContentManager.pdb
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v21.2.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.DataPresenter.v21.2.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.Editors.v21.2.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.v21.2.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.DataManager.v21.2.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v21.2.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.Controls.Grids.XamGrid.v21.2.xml
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.DataPresenter.v21.2.xml
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.Editors.v21.2.xml
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.v21.2.xml
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.DataManager.v21.2.xml
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\InfragisticsWPF4.Controls.Menus.XamMenu.v21.2.xml
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\de\InfragisticsWPF4.Controls.Grids.XamGrid.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\es\InfragisticsWPF4.Controls.Grids.XamGrid.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\fr\InfragisticsWPF4.Controls.Grids.XamGrid.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\de\InfragisticsWPF4.DataPresenter.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\es\InfragisticsWPF4.DataPresenter.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\fr\InfragisticsWPF4.DataPresenter.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\de\InfragisticsWPF4.Editors.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\es\InfragisticsWPF4.Editors.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\fr\InfragisticsWPF4.Editors.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\de\InfragisticsWPF4.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\es\InfragisticsWPF4.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\fr\InfragisticsWPF4.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\de\InfragisticsWPF4.DataManager.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\es\InfragisticsWPF4.DataManager.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\fr\InfragisticsWPF4.DataManager.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\de\InfragisticsWPF4.Controls.Menus.XamMenu.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\es\InfragisticsWPF4.Controls.Menus.XamMenu.v21.2.resources.dll
+C:\Users\trevor.taylor\Documents\GitHub\Revit-Family-Finder-1\bin\Debug\fr\InfragisticsWPF4.Controls.Menus.XamMenu.v21.2.resources.dll

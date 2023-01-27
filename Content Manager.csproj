@@ -43,7 +43,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DefineConstants>TRACE;DEBUG</DefineConstants>
-    <OutputPath>..\..\..\..\..\..\ProgramData\Autodesk\Revit\Addins\2022\ZGF\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
@@ -80,11 +80,11 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="RevitAPI">
-      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files\Autodesk\Revit 2023\RevitAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
-      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files\Autodesk\Revit 2023\RevitAPIUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -200,7 +200,7 @@
     <None Include="Art\EditFamily.png" />
     <None Include="Art\EditFamily1.png" />
     <Content Include="AddingXamlFormToExistProject.txt" />
-    <Content Include="ContentManager_DEBUG.addin">
+    <Content Include="ContentManager.addin">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
@@ -264,12 +264,12 @@
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>REM IF "$(ConfigurationName)"=="Debug" COPY "$(ProjectDir)$(TargetName).addin" "C:\ProgramData\Autodesk\Revit\Addins\2020\$(TargetName).addin" /Y
-REM IF "$(ConfigurationName)"=="Debug" DEL "C:\ProgramData\Autodesk\Revit\Addins\2020\$(TargetFileName)"
+    <PostBuildEvent>IF "$(ConfigurationName)"=="Debug" COPY "$(ProjectDir)$(TargetName).addin" "C:\ProgramData\Autodesk\Revit\Addins\2023\$(TargetName).addin" /Y
+REM IF "$(ConfigurationName)"=="Debug" DEL "C:\ProgramData\Autodesk\Revit\Addins\2023\$(TargetFileName)"
 
-REM COPY "$(TargetPath)" "C:\ProgramData\Autodesk\Revit\Addins\2022\ZGF\$(TargetFileName)" /Y
+REM COPY "$(TargetPath)" "C:\ProgramData\Autodesk\Revit\Addins\2023\ZGF\$(TargetFileName)" /Y
 
-C:\Users\trevor.taylor\Dropbox\DEV\signtool.exe sign /i ZGF-SubCA-1 "$(TargetPath)"
+REM C:\Users\trevor.taylor\Dropbox\DEV\signtool.exe sign /i ZGF-SubCA-1 "$(TargetPath)"
 </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
